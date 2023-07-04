@@ -1,6 +1,8 @@
 import "./globals.css";
 
 import { Footer, NavBar } from "@components";
+import '@rainbow-me/rainbowkit/styles.css';
+import { Providers } from './providers';
 
 export const metadata = {
   title: "Car Hub",
@@ -12,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en'>
       <body className='relative'>
         <NavBar />
-        {children}
+        <Providers>{children}</Providers>
         <Footer />
       </body>
     </html>
