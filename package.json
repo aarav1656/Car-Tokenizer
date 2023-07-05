@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
+<<<<<<< HEAD
     "@rainbow-me/rainbowkit": "^1.0.4",
+=======
+    "@openzeppelin/contracts": "^4.9.2",
+>>>>>>> 7572e382f718d2307fe5b497d4dfae8a3042494c
     "@types/node": "20.2.1",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
