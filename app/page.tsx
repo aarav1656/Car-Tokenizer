@@ -2,6 +2,8 @@ import { fetchCars } from "@utils";
 import { HomeProps } from "@types";
 import { fuels, yearsOfProduction } from "@constants";
 import { CarCard, ShowMore, SearchBar, CustomFilter, Hero } from "@components";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 
 export default async function Home({ searchParams }: HomeProps) {
   const allCars = await fetchCars({

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import CustomButton from "./CustomButton";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const NavBar = () => (
   <header className='w-full  absolute z-10'>
@@ -16,11 +17,7 @@ const NavBar = () => (
         />
       </Link>
 
-      <CustomButton
-        title='Sign in'
-        btnType='button'
-        containerStyles='text-primary-blue rounded-full bg-white min-w-[130px]'
-      />
+      <ConnectButton/>
     </nav>
   </header>
 );
