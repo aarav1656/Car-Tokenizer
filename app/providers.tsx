@@ -1,16 +1,12 @@
 'use client';
 
 import * as React from 'react';
-<<<<<<< HEAD
-import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { NavBar } from '@components';
-=======
->>>>>>> 7572e382f718d2307fe5b497d4dfae8a3042494c
 import {
   RainbowKitProvider,
   getDefaultWallets,
   connectorsForWallets,
 } from '@rainbow-me/rainbowkit';
+import { NavBar } from '@components';
 import {
   argentWallet,
   trustWallet,
@@ -39,11 +35,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
   [publicProvider()]
 );
 
-<<<<<<< HEAD
-const projectId = '9ade29717bacce559d9a3ec0524c2a2c';
-=======
 const projectId = 'process.env.YOUR_PROJECT_ID';
->>>>>>> 7572e382f718d2307fe5b497d4dfae8a3042494c
 
 const { wallets } = getDefaultWallets({
   appName: 'RainbowKit demo',
@@ -80,10 +72,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider chains={chains} appInfo={demoAppInfo}>
-<<<<<<< HEAD
         <NavBar/>
-=======
->>>>>>> 7572e382f718d2307fe5b497d4dfae8a3042494c
         {mounted && children}
       </RainbowKitProvider>
     </WagmiConfig>
