@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import CustomButton from "./CustomButton";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+import Button from "./CustomButton";
 
 const NavBar = () => (
   <header className='w-full  absolute z-10'>
@@ -16,7 +17,11 @@ const NavBar = () => (
           className='object-contain'
         />
       </Link>
-
+      <CustomButton
+        title='Create NFT'
+        btnType='button'
+        containerStyles='text-primary-blue rounded-full bg-white min-w-[130px]'
+      />
       <ConnectButton/>
     </nav>
   </header>
