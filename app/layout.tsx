@@ -17,7 +17,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en'>
       <body className='relative'>
         <Providers>{children}</Providers>
-        <Footer />
       </body>
     </html>
   );
