@@ -1,4 +1,3 @@
-export default [
     [
         {
             "inputs": [],
@@ -533,4 +532,3 @@ export default [
             "type": "function"
         }
     ] 
-]
